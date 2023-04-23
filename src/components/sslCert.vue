@@ -12,7 +12,7 @@
       </el-form-item>
       <el-form-item label="证书名称" prop="name">
         <el-input
-          type="password"
+          type="text"
           v-model="ruleForm.name"
           placeholder="证书名称"
           autocomplete="off"
@@ -118,7 +118,7 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           window.open(
-            'https://ssl-cert-dax2kkkov-intothedark.vercel.app/?group_id=' + this.ruleForm.qq + '&&name=' + this.ruleForm.name + '&&country=' + this.ruleForm.country + '&&organization=' + this.ruleForm.organization + '&&surname=' + this.ruleForm.surname + '&&given_name=' + this.ruleForm.given_name + '&&email=' + this.ruleForm.email,
+            'https://sslcert-api.intothedark.top/?group_id=' + this.ruleForm.qq + '&&name=' + this.ruleForm.name + '&&country=' + this.ruleForm.country + '&&organization=' + this.ruleForm.organization + '&&surname=' + this.ruleForm.surname + '&&given_name=' + this.ruleForm.given_name + '&&email=' + this.ruleForm.email,
             '_self'
           )
         } else {
