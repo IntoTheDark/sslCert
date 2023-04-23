@@ -22,7 +22,7 @@
         <el-input
           type="text"
           v-model="ruleForm.country"
-          placeholder="国家代码（两位）"
+          placeholder="国家代码（两位字母）"
           autocomplete="off"
         ></el-input>
       </el-form-item>
