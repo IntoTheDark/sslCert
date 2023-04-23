@@ -1,0 +1,71 @@
+@import './base.css';
+@import './login&reg.css';
+
+.full-height {
+  height: 100%;
+  overflow: auto;
+}
+
+.full-height::-webkit-scrollbar {
+  display: none;
+}
+
+.ninety-height {
+  height: 90%;
+}
+
+.header-right {
+  margin: auto 0 auto auto;
+  display: flex;
+  right: 0;
+}
+
+.header-main {
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  background-color: transparent;
+  color: white;
+}
+
+.main-container {
+  all: revert;
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin: 1rem auto;
+  position: relative;
+  height: 85%;
+}
+
+.black-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.absolute-center {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.icon-center {
+  transform: translate(0, 15%);
+}
+
+.admin-notice-header {
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+
+

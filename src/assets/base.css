@@ -1,0 +1,266 @@
+#app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/*表单元素*/
+.el-form-item {
+  margin-bottom: 1rem;
+}
+
+.el-form-item__label {
+  color: white;
+}
+
+.el-form-item__content {
+  color: white;
+}
+
+/*输入框*/
+.el-input__inner {
+  background-color: transparent;
+  color: white;
+}
+
+.el-input.is-disabled .el-input__inner {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #909399;
+}
+
+.el-textarea__inner {
+  background: transparent;
+  color: white;
+}
+
+/*下拉文本*/
+.el-collapse-item__header {
+  background-color: transparent;
+  color: white;
+}
+
+.el-collapse-item__wrap {
+  background-color: transparent;
+}
+
+.el-collapse-item__header.is-active {
+  background-color: transparent;
+}
+
+/*导航栏*/
+.el-menu--horizontal > .el-menu-item.is-active {
+  color: white;
+}
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  background-color: transparent;
+  color: white;
+}
+
+/*用户列表*/
+.el-table th, .el-table tr {
+  border: 0;
+  background-color: transparent;
+}
+
+.el-table tbody tr:hover > td {
+  background-color: transparent !important;
+}
+
+.el-table, .el-table__expanded-cell {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.el-table__body tr.current-row > td.el-table__cell {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.el-input-group__append, .el-input-group__prepend {
+  background-color: transparent;
+}
+
+.el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background-color: rgba(144, 147, 153, 0.5);
+}
+
+
+/*描述*/
+.el-descriptions__body {
+  background-color: transparent;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+h3 {
+  color: white;
+  margin: 1rem 0;
+}
+
+h4 {
+  margin: 0;
+  color: white;
+}
+
+h5 {
+  margin: 0;
+  color: white;
+}
+
+.el-message-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.el-button {
+  background: transparent;
+}
+
+.el-message--success {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0
+}
+
+.el-message--infow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0
+}
+
+/*标签栏*/
+.el-radio-button--small .el-radio-button__inner {
+  background-color: transparent;
+}
+
+.el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  background-color: transparent;
+}
+
+/*返回页*/
+.el-page-header {
+  color: white;
+}
+
+.el-page-header__content {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #909399;
+}
+
+.el-tabs--left .el-tabs__header.is-left, .el-tabs--left .el-tabs__header.is-right, .el-tabs--left .el-tabs__nav-scroll, .el-tabs--left .el-tabs__nav-wrap.is-left, .el-tabs--left .el-tabs__nav-wrap.is-right, .el-tabs--right .el-tabs__header.is-left, .el-tabs--right .el-tabs__header.is-right, .el-tabs--right .el-tabs__nav-scroll, .el-tabs--right .el-tabs__nav-wrap.is-left, .el-tabs--right .el-tabs__nav-wrap.is-right {
+  background-color: transparent;
+}
+
+.el-tabs--left.el-tabs--border-card .el-tabs__item.is-left.is-active {
+  background-color: transparent;
+}
+
+.el-tabs--border-card {
+  background-color: transparent;
+}
+
+/*抽屉*/
+.el-drawer__open .el-drawer.rtl {
+  background: transparent;
+}
+
+.el-drawer {
+  background-color: transparent;
+}
+
+/*按钮*/
+.el-button {
+  background-color: transparent;
+  color: white;
+}
+
+.el-button:focus, .el-button:hover {
+  background-color: transparent;
+}
+
+.el-button--text {
+  color: white;
+}
+
+.el-button.is-disabled.el-button--text {
+  color: #909399;
+}
+
+.el-tabs__item {
+  color: #909399;
+}
+
+.el-radio-button__inner {
+  color: #909399;
+}
+
+/*卡片*/
+
+.el-card__body {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.el-card.is-always-shadow, .el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover {
+  background-color: transparent;
+}
+
+/*弹窗*/
+.el-dialog {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.el-dialog__title {
+  color: white;
+}
+
+/*换页*/
+.el-pagination {
+  color: white;
+}
+
+.el-pagination button:disabled {
+  background-color: transparent;
+}
+
+.el-pagination .btn-prev {
+  color: white;
+  background-color: transparent;
+}
+
+.el-pagination .btn-next {
+  color: white;
+  background-color: transparent;
+}
+
+.el-pager li.active {
+  background-color: transparent;
+}
+
+.el-pager li {
+  background-color: transparent;
+}
