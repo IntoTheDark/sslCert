@@ -1,7 +1,7 @@
 <template>
   <el-main class="login-wrap">
     <el-form class="login-container" :model="ruleForm" :rules="rules" ref="ruleForm">
-      <h2 class="login-title">公钥申请</h2>
+      <h2 class="login-title">证书申请</h2>
       <el-form-item label="QQ" prop="qq">
         <el-input
           type="text"
