@@ -58,6 +58,14 @@
           autocomplete="off"
         ></el-input>
       </el-form-item>
+      <el-form-item label="服务器域名" prop="website">
+        <el-input
+          type="text"
+          v-model="ruleForm.website"
+          placeholder="服务器域名"
+          autocomplete="off"
+        ></el-input>
+      </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="dosubmit('ruleForm')">
           下载证书
@@ -79,36 +87,35 @@ export default {
         organization: '',
         surname: '',
         given_name: '',
-        email: ''
+        email: '',
+        website: ''
       },
       rules: {
         qq: [
           {required: true, message: '请输入QQ', trigger: 'blur'},
-          {min: 6, max: 11, message: '长度在 6 到 11 个字符', trigger: 'blur'}
+          {min: 6, max: 11, message: '长度在 6 到 11 个数字', trigger: 'blur'}
         ],
         name: [
-          {required: true, message: '请输入证书名', trigger: 'blur'},
-          {min: 6, max: 20, message: '长度在 6 到 20 个字符', trigger: 'blur'}
+          {required: true, message: '请输入证书名', trigger: 'blur'}
         ],
         country: [
           {required: true, message: '请输入国家代码', trigger: 'blur'},
           {min: 2, max: 2, message: '该代码仅两位', trigger: 'blur'}
         ],
         organization: [
-          {required: true, message: '请输入组织名', trigger: 'blur'},
-          {min: 6, max: 20, message: '长度在 6 到 20 个字符', trigger: 'blur'}
+          {required: true, message: '请输入组织名', trigger: 'blur'}
         ],
         surname: [
-          {required: true, message: '请输入姓', trigger: 'blur'},
-          {min: 6, max: 12, message: '长度在 6 到 12 个字符', trigger: 'blur'}
+          {required: true, message: '请输入姓', trigger: 'blur'}
         ],
         given_name: [
-          {required: true, message: '请输入名', trigger: 'blur'},
-          {min: 6, max: 10, message: '长度在 6 到 10 个字符', trigger: 'blur'}
+          {required: true, message: '请输入名', trigger: 'blur'}
         ],
         email: [
-          {required: true, message: '请输入电子邮箱', trigger: 'blur'},
-          {min: 6, max: 20, message: '长度在 6 到 20 个字符', trigger: 'blur'}
+          {required: true, message: '请输入电子邮箱', trigger: 'blur'}
+        ],
+        website: [
+          {required: true, message: '请输入电子邮箱', trigger: 'blur'}
         ]
       }
     }
@@ -118,7 +125,7 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           window.open(
-            'https://sslcert-api.intothedark.top/?group_id=' + this.ruleForm.qq + '&&name=' + this.ruleForm.name + '&&country=' + this.ruleForm.country + '&&organization=' + this.ruleForm.organization + '&&surname=' + this.ruleForm.surname + '&&given_name=' + this.ruleForm.given_name + '&&email=' + this.ruleForm.email,
+            'https://sslcert-api.intothedark.top/?group_id=' + this.ruleForm.qq + '&&name=' + this.ruleForm.name + '&&country=' + this.ruleForm.country + '&&organization=' + this.ruleForm.organization + '&&surname=' + this.ruleForm.surname + '&&given_name=' + this.ruleForm.given_name + '&&email=' + this.ruleForm.email + '&website=' + this.ruleForm.website,
             '_self'
           )
         } else {
